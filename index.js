@@ -1,31 +1,15 @@
-let iWelcome = 0;
-let welcomeText = 'Welcome!';
-let welcomeSpeed = 200;
-
-function typeWelcome() {
-  if (iWelcome < welcomeText.length) {
-    document.getElementById('welcome').innerHTML += welcomeText.charAt(
-      iWelcome
-    );
-    iWelcome++;
+function typeMessage(id, message, i, speed) {
+  if (i < message.length) {
+    document.getElementById(id).innerHTML += message.charAt(i);
+    i++;
   }
-  setTimeout(typeWelcome, welcomeSpeed);
+  setTimeout(function () {
+    typeMessage(id, message, i, speed);
+  }, speed);
 }
 
-let techText = 'Technologies I currently work with:';
-let techSpeed = 200;
-let iTech = 0;
-
-function typeTech() {
-  if (iTech < techText.length) {
-    document.getElementById('technologies').innerHTML += techText.charAt(iTech);
-    iTech++;
-  }
-  setTimeout(typeTech, techSpeed);
-}
-
-typeWelcome();
-typeTech();
+typeMessage('welcome', 'Welcome!', 0, 200);
+typeMessage('technologies', 'Technologies I currently work with:', 0, 200);
 
 const aboutPage = document.getElementById('about');
 const contactPage = document.getElementById('contact');
