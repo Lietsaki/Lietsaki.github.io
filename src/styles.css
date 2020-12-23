@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tv {
+  display: grid;
+  grid-template-rows: 1fr 8fr 2.5fr;
+  grid-template-columns: 1fr 15fr 1fr;
+  background-color: #222;
+  background-image: url(http://subtlepatterns.com/patterns/broken_noise.png);
+  overflow: hidden;
+}
+
+.tv-border {
+  display: grid;
+  grid-template-rows: 3% 1fr 4%;
+  grid-template-columns: 1.5% 1fr 1.5%;
+  background-color: #363535;
+}
+
+.center {
+  display: grid;
+  grid-template-rows: 3% 1fr 3%;
+  grid-template-columns: 2% 1fr 2%;
+  background-color: #131313;
+}
+
+:root {
+  --button-height: 4.5vh;
+  --color-text: rgba(0, 0, 0, 0.2);
+  --color-text-shadow: rgba(255, 255, 255, 0.15);
+  --color-page-bg: #272624;
+  --color-bg: #2a2a2b;
+  --color-bg-light: #303030;
+  --color-bg-dark: #303133;
+  --color-overlay-light: rgba(255, 255, 255, 0.2);
+  --color-overlay-medium: rgba(0, 0, 0, 0.1);
+  --color-overlay-dark: rgba(0, 0, 0, 0.2);
+  --color-tab-focus: rgba(255, 255, 255, 0.15);
+}
+
+.retro-button {
+  position: relative;
+  padding: 0 15px;
+  appearance: none;
+  box-sizing: border-box;
+  font-size: calc(var(--button-height) / 3);
+  font-family: 'Open Sans', sans-serif;
+  background: var(--color-bg);
+  height: var(--button-height);
+  min-width: var(--button-height);
+  border-radius: calc(var(--button-height) / 2);
+  border: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-text);
+  text-shadow: 1px 1px var(--color-text-shadow);
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: all 200ms ease;
+  box-shadow: -1px -1px 1px var(--color-bg),
+    0 0 0 4px var(--color-overlay-medium), 1px 1px 1px var(--color-bg-dark),
+    inset 0 0 0 var(--color-overlay-dark),
+    inset 0.5rem 0.5rem 0.25rem var(--color-bg-light);
+}
+
+@media screen and (min-width: 768px) {
+  .retro-button.next {
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+  }
+  .retro-button.previous {
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+  }
+}
+
+.retro-button.nav-button {
+  font-size: calc(var(--button-height) / 4);
+  height: calc(var(--button-height) / 1.5);
+}
+
+.retro-button::-moz-focus-inner {
+  outline: none;
+  border: none;
+}
+
+.retro-button:focus {
+  outline: none;
+  box-shadow: -1px -1px 1px var(--color-bg-dark),
+    0 0 0 4px var(--color-tab-focus), 1px 1px 1px var(--color-bg-dark),
+    inset 0 0 0 var(--color-overlay-dark),
+    inset 0.5rem 0.5rem 0.25rem var(--color-bg-light);
+}
+
+.retro-button:hover {
+  box-shadow: -1px -1px 1px var(--color-bg-dark),
+    0 0 0 4px var(--color-overlay-dark), 1px 1px 1px var(--color-bg-dark),
+    inset 0 0 0 var(--color-overlay-dark),
+    inset 0.5rem 0.5rem 0.25rem var(--color-bg-light);
+}
+
+.retro-button:active {
+  box-shadow: inset 1px 1px 1px var(--color-bg),
+    0 0 0 4px var(--color-overlay-dark),
+    inset -1px -1px 1px var(--color-bg-light),
+    inset 0.5rem 0.5rem 0.75rem var(--color-bg-dark),
+    inset 0.5rem 0.5rem 0.5rem var(--color-bg-light);
+}
+
+.title-area {
+  height: 10%;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  font-family: VT323;
+}
+
+.float {
+  animation: hover-float 2s ease-in-out infinite;
+}
+
+@keyframes hover-float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes enter {
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.enter {
+  animation: enter 1s ease-in-out;
+}
+
+#noise {
+  /* background-image: url('https://media.giphy.com/media/3oz8xOvhnSpVOs9xza/giphy.gif'); */
+  background-image: url('https://media.giphy.com/media/Yqn9tE2E00k4U/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

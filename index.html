@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ricardo Sandez's Webdev Portfolio</title>
+    <link rel="stylesheet" href="./public/styles.css" />
+  </head>
+  <body class="h-screen w-screen box-border">
+    <div class="tv h-full w-full">
+      <div class="tv-top-left"></div>
+      <div class="tv-top-center">
+        <div class="ricardo-logo flex justify-between items-center h-full">
+          <img
+            src="./public/media/Ricardo Sandez Logo.svg"
+            alt="Ricardo Sandez Logo"
+            class="w-36 h-20"
+          />
+          <h1 class="text-silver text-sm text-center font-bold sm:text-lg">
+            Full Stack Web Developer
+          </h1>
+        </div>
+      </div>
+      <div class="tv-top-right"></div>
+
+      <div class="tv-medium-left"></div>
+      <div class="tv-medium-center tv-border">
+        <div class="border-top-left"></div>
+        <div class="border-top-center"></div>
+        <div class="border-top-right"></div>
+
+        <div class="border-medium-left"></div>
+        <div class="border-medium-center rounded center">
+          <div class="center-top-left"></div>
+          <div class="center-top-center"></div>
+          <div class="center-top-right"></div>
+
+          <div class="center-center-left"></div>
+          <div class="center-center-center bg-white relative overflow-hidden">
+            <div id="trainingMode" class="h-full w-full hidden">
+              <div
+                class="video-area absolute top-0 left-0 h-full w-full z-0 overflow-hidden"
+              >
+                <video
+                  class="bg-video__content object-cover h-full w-full"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="./public/media/trainingmode-mp4.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="./public/media/trainingmode-webm.webm"
+                    type="video/webm"
+                  />
+                  Your browser doesn't support this video. Please use a new one.
+                </video>
+              </div>
+
+              <div
+                class="data-area flex flex-col justify-between h-full w-full"
+              >
+                <div
+                  class="title-area relative z-10 text-2xl sm:text-3xl bg-blue-500"
+                >
+                  <h2 class="ml-2 text-white opacity-100">Trainingmode.pro</h2>
+                  <span class="mx-3 text-deepBlue">-</span>
+                  <a
+                    href="https://trainingmode.pro"
+                    target="_blank"
+                    class="text-deepBlue"
+                    >Try now!</a
+                  >
+                </div>
+
+                <div
+                  class="description-area relative z-10 bg-blue-500 font-vt opacity-80 p-3"
+                >
+                  <div class="technologies opacity-100 flex items-center">
+                    <p class="text-2xl">Stack:</p>
+                    <img
+                      src="./public/media/vue.svg"
+                      alt="vuejs logo"
+                      class="w-8 h-8 mx-2 float"
+                    />
+                    <img
+                      src="./public/media/sass.svg"
+                      alt="sass logo"
+                      class="w-8 h-8 mx-1 float"
+                    />
+                    <img
+                      src="./public/media/firebase.svg"
+                      alt="firebase logo"
+                      class="w-8 h-8 mx-2 float"
+                    />
+                  </div>
+                  <div class="description opacity-100">
+                    <p>
+                      A fighting game combo simulator to help beginners learn
+                      numpad notation. Average monthly users: 300. Average
+                      monthly requests: 1,300.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="whoolsoWebApp" class="h-full w-full hidden">
+              <div
+                class="video-area absolute top-0 left-0 h-full w-full z-0 overflow-hidden"
+              >
+                <video
+                  class="bg-video__content object-cover h-full w-full"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="./public/media/whoolso-webapp-mp4.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="./public/media/whoolso-webapp-webm.webm"
+                    type="video/webm"
+                  />
+                  Your browser doesn't support this video. Please use a new one.
+                </video>
+              </div>
+
+              <div
+                class="data-area flex flex-col justify-between h-full w-full"
+              >
+                <div
+                  class="title-area relative z-10 text-lg sm:text-xl bg-yellow-500"
+                >
+                  <h2 class="ml-2 text-white opacity-100">
+                    The Whoolso Webapp
+                  </h2>
+                  <span class="mx-3 text-deepBlue">-</span>
+                  <p class="text-deepBlue">Work in Progress</p>
+                </div>
+
+                <div
+                  class="description-area relative z-10 bg-yellow-500 font-vt opacity-80 p-3"
+                >
+                  <div class="technologies opacity-100 flex items-center">
+                    <p class="text-2xl">Stack:</p>
+                    <img
+                      src="./public/media/vue.svg"
+                      alt="vuejs logo"
+                      class="w-8 h-8 mx-2 float"
+                    />
+                    <img
+                      src="./public/media/sass.svg"
+                      alt="sass logo"
+                      class="w-8 h-8 mx-1 float"
+                    />
+                    <img
+                      src="./public/media/paypal.svg"
+                      alt="paypal logo"
+                      class="w-8 h-8 mx-1 float"
+                    />
+                  </div>
+                  <div class="description opacity-100">
+                    <p>
+                      The web app that consumes the Whoolso API. Packed with
+                      features like image upload and crop, creating posts,
+                      signup & login and many more. AJAX intensive, fully
+                      response and with dark mode.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="whoolsoAPI" class="h-full w-full hidden">
+              <div
+                class="video-area absolute top-0 left-0 h-full w-full z-0 overflow-hidden"
+              >
+                <video
+                  class="bg-video__content object-cover h-full w-full"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="./public/media/whoolso-api-mp4.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="./public/media/whoolso-api-webm.webm"
+                    type="video/webm"
+                  />
+                  Your browser doesn't support this video. Please use a new one.
+                </video>
+              </div>
+
+              <div
+                class="data-area flex flex-col justify-between h-full w-full"
+              >
+                <div
+                  class="title-area relative z-10 text-lg sm:text-xl bg-pinkPanther-100"
+                >
+                  <h2 class="ml-2 text-white opacity-100">The Whoolso API</h2>
+                  <span class="mx-3 text-deepBlue">-</span>
+                  <a
+                    href="https://documenter.getpostman.com/view/7311265/TVsuD7qa"
+                    target="_blank"
+                    class="text-deepBlue"
+                    >Try now on Postman!</a
+                  >
+                </div>
+
+                <div
+                  class="description-area relative z-10 bg-pinkPanther-100 font-vt opacity-80 p-3"
+                >
+                  <div
+                    class="technologies opacity-100 flex flex-wrap items-center"
+                  >
+                    <p class="text-2xl">Stack:</p>
+                    <img
+                      src="./public/media/nodejs.svg"
+                      alt="nodejs logo"
+                      class="w-6 h-6 mx-2 float"
+                    />
+                    <img
+                      src="./public/media/expressjs.svg"
+                      alt="expressjs logo object-contain"
+                      class="w-13 h-8 mx-1 float"
+                    />
+                    <img
+                      src="./public/media/mongodb.svg"
+                      alt="mongodb logo"
+                      class="w-16 h-15 mx-3 float"
+                    />
+                    <img
+                      src="./public/media/aws-s3.svg"
+                      alt="aws s3 logo"
+                      class="w-12 h-12 mx-1 float"
+                    />
+                    <img
+                      src="./public/media/jwt.svg"
+                      alt="jwt logo"
+                      class="w-5 h-5 mx-3 float"
+                    />
+                    <img
+                      src="./public/media/paypal.svg"
+                      alt="paypal logo"
+                      class="w-7 h-7 mx-3 float"
+                    />
+                    <img
+                      src="./public/media/heroku.svg"
+                      alt="heroku logo"
+                      class="w-4 h-6 mx-3 float"
+                    />
+                    <img
+                      src="./public/media/sendgrid.svg"
+                      alt="sendgrid logo"
+                      class="w-7 h-7 mx-3 float"
+                    />
+                    <img
+                      src="./public/media/socket-io.svg"
+                      alt="socket.io logo"
+                      class="w-7 h-7 mx-1 float"
+                    />
+                  </div>
+                  <div class="description opacity-100">
+                    <p>
+                      A wholesome social network. Its main features are
+                      automatically filtering content based on the 'tone' you
+                      wish to see, unlocking videogame-like achievements, giving
+                      prizes to posts and comments, and much more. Try it now on
+                      Postman.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="contact"
+              class="font-vt p-3 sm:p-5 bg-gray-800 w-full h-full hidden"
+            >
+              <h2 class="text-5xl text-pinkPanther-100">Contact</h2>
+              <p class="text-xl my-2 text-gray-300">
+                I'm available for work. You can find me in the following places:
+              </p>
+
+              <div
+                class="twitter flex items-center my-7 text-pinkPanther-100 enter"
+              >
+                <img
+                  class="w-8 h-8"
+                  src="./public/media/twitter.svg"
+                  alt="twitter logo"
+                /><a
+                  class="text-2xl ml-3"
+                  href="https://twitter.com/poeticWestern"
+                  target="_blank"
+                  >@poeticWestern</a
+                >
+              </div>
+              <div
+                class="linkedIn flex items-center my-7 text-pinkPanther-100 enter"
+              >
+                <img
+                  class="w-8 h-8"
+                  src="./public/media/linkedin.svg"
+                  alt="linkedin logo"
+                /><a
+                  href="https://www.linkedin.com/in/ricardo-sandez"
+                  class="text-2xl ml-3"
+                  target="_blank"
+                  >Ricardo Sandez on LinkedIn</a
+                >
+              </div>
+              <div
+                class="github flex items-center my-7 text-pinkPanther-100 enter"
+              >
+                <img
+                  class="w-8 h-8"
+                  src="./public/media/github.svg"
+                  alt="github logo"
+                /><a
+                  href="https://github.com/Lietsaki"
+                  class="text-2xl ml-3"
+                  target="_blank"
+                  >@Lietsaki on GitHub</a
+                >
+              </div>
+            </div>
+
+            <div
+              id="about"
+              class="font-vt bg-gray-800 w-full h-full p-2 sm:p-4"
+            >
+              <h1
+                id="welcome"
+                class="text-pinkPanther-100 text-5xl relative xl:bottom-2 lg:mb-7 xl:mb-2"
+              ></h1>
+              <div
+                class="introduction flex sm:items-center mt-3 mb-2 sm:mb-6 lg:mb-5 text-gray-300"
+              >
+                <img
+                  class="w-1/4 h-1/4 md:w-1/6 md:h-1/6 mr-2 rounded-full xl:w-1/12 xl:h-1/12 mt-3 sm:mt-0"
+                  src="./public/media/ricardo-sandez.jpeg"
+                  alt="cat"
+                />
+                <p class="sm:ml-3 sm:text-lg lg:text-2xl p-2">
+                  Hello there! I'm a Full Stack Web Developer based in Madrid,
+                  Spain. I like to create
+                  <span class="text-pinkPanther-200">
+                    unconventional products</span
+                  >
+                  that stand out.
+                </p>
+              </div>
+              <div class="skillset text-gray-300">
+                <p id="technologies" class="mb-2 lg:mb-4 sm:text-xl"></p>
+                <div
+                  class="skillset__images flex flex-wrap bg-gray-600 rounded p-2 sm:text-xl"
+                >
+                  <p>
+                    Nodejs / Express / MongoDB / Vuejs / Vanila JavaScript / CSS
+                    / SCSS / TailwindCSS / HTML5 / Adobe Illustrator
+                  </p>
+                </div>
+              </div>
+              <p class="text-cyberGrape mt-2 md:text-2xl sm:mt-4">
+                When viewing the projects, use the
+                <span class="text-pinkPanther-100">Next</span> and
+                <span class="text-pinkPanther-100">Previous</span> buttons to
+                move around.
+              </p>
+            </div>
+
+            <div
+              id="noise"
+              class="font-vt bg-gray-800 w-full h-full absolute t-0 opacity-0"
+            ></div>
+          </div>
+          <div class="center-center-right"></div>
+
+          <div class="center-bottom-left"></div>
+          <div class="center-bottom-center"></div>
+          <div class="center-bottom-right"></div>
+        </div>
+        <div class="border-medium-right"></div>
+
+        <div class="border-bottom-left"></div>
+        <div class="border-bottom-center"></div>
+        <div class="border-bottom-right"></div>
+      </div>
+      <div class="tv-medium-right"></div>
+
+      <div class="tv-bottom-left"></div>
+      <div class="tv-bottom-center flex">
+        <div
+          class="cables-area flex flex-col items-start relative top-3 sm:top-0 md:flex-row md:items-center justify-center w-1/4"
+        >
+          <div class="yellow-input w-1/4 h-1/4">
+            <div
+              class="silver-circle bg-gray-300 rounded-full w-5 h-5 sm:w-8 sm:h-8 flex items-center justify-center"
+            >
+              <div
+                class="yellow-circle bg-yellow-300 w-3 h-3 sm:w-5 sm:h-5 rounded-full flex items-center justify-center"
+              >
+                <div
+                  class="black-circle bg-gray-800 rounded-full w-1 h-1 sm:w-2 sm:h-2"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="white-input w-1/4 h-1/4">
+            <div
+              class="silver-circle bg-gray-300 rounded-full w-5 h-5 sm:w-8 sm:h-8 flex items-center justify-center"
+            >
+              <div
+                class="yellow-circle bg-white-200 w-3 h-3 sm:w-5 sm:h-5 rounded-full flex items-center justify-center"
+              >
+                <div
+                  class="black-circle bg-gray-800 rounded-full w-1 h-1 sm:w-2 sm:h-2"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="red-input w-1/4 h-1/4">
+            <div
+              class="silver-circle bg-gray-300 rounded-full w-5 h-5 sm:w-8 sm:h-8 flex items-center justify-center"
+            >
+              <div
+                class="yellow-circle bg-red-500 w-3 h-3 sm:w-5 sm:h-5 rounded-full flex items-center justify-center"
+              >
+                <div
+                  class="black-circle bg-gray-800 rounded-full w-1 h-1 sm:w-2 sm:h-2"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="buttons-area relative right-5 sm:right-0 flex justify-evenly items-center w-3/4"
+        >
+          <div
+            class="nav-buttons relative bottom-2 md:bottom-0 right-3 md:right-0 flex flex-col xl:flex-row"
+          >
+            <button
+              class="retro-button mt-5 mr-5 nav-button"
+              id="projectsButton"
+            >
+              Projects
+            </button>
+            <button class="retro-button mt-5 mr-5 nav-button" id="aboutButton">
+              About
+            </button>
+            <button class="retro-button mt-5 nav-button" id="contactButton">
+              Contact
+            </button>
+          </div>
+
+          <div
+            class="tv-buttons flex flex-col md:flex-row relative left-2 md:left-0"
+          >
+            <button class="retro-button previous" id="previousButton">
+              Previous
+            </button>
+            <button
+              class="retro-button mt-7 md:mt-0 md:ml-2 next"
+              id="nextButton"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="sony-logo-area hidden sm:flex items-center justify-center w-1/4 md:w-1/12"
+        >
+          <img
+            src="././public/media/sony.svg"
+            alt="sony logo"
+            class="w-3/4 relative left-4 sm:left-0 xl:w-2/4"
+          />
+        </div>
+      </div>
+      <div class="tv-bottom-right"></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
