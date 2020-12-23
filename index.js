@@ -3,9 +3,7 @@ function typeMessage(id, message, i, speed) {
     document.getElementById(id).innerHTML += message.charAt(i);
     i++;
   }
-  setTimeout(function () {
-    typeMessage(id, message, i, speed);
-  }, speed);
+  setTimeout(typeMessage, speed, id, message, i, speed);
 }
 
 typeMessage('welcome', 'Welcome!', 0, 200);
