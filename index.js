@@ -41,14 +41,7 @@ function switchPage(pageToSwitchTo) {
 
     if (pageToSwitchTo === aboutPage) {
       document.getElementById('welcome').innerHTML = '';
-      document.getElementById('technologies').innerHTML = '';
       typeMessage('welcome', 'Welcome!', 0, 200);
-      typeMessage(
-        'technologies',
-        'Technologies I currently work with:',
-        0,
-        200
-      );
     }
     transitioning = false;
   }, 1000);
