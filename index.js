@@ -40,12 +40,15 @@ function switchPage(pageToSwitchTo) {
     viewingPage = pageToSwitchTo;
 
     if (pageToSwitchTo === aboutPage) {
-      iTech = 0;
-      iWelcome = 0;
       document.getElementById('welcome').innerHTML = '';
       document.getElementById('technologies').innerHTML = '';
-      typeWelcome();
-      typeTech();
+      typeMessage('welcome', 'Welcome!', 0, 200);
+      typeMessage(
+        'technologies',
+        'Technologies I currently work with:',
+        0,
+        200
+      );
     }
     transitioning = false;
   }, 1000);
