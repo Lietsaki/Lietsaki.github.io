@@ -3,6 +3,7 @@ function typeMessage(id, message, i, speed) {
     document.getElementById(id).innerHTML += message.charAt(i);
     i++;
   }
+  // the last 3 arguments are arguments that will be passed in to the function, that is, typeMessage
   setTimeout(typeMessage, speed, id, message, i, speed);
 }
 

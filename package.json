@@ -1,7 +1,7 @@
 {
   "name": "lietsaki-webdev-portfolio-site",
   "version": "1.0.0",
-  "description": "A portfolio to showcase my work as a web developer",
+  "description": "A portfolio to showcase my work as a developer",
   "main": "index.js",
   "scripts": {
     "build-css": "tailwindcss build src/styles.css -o public/styles.css"
