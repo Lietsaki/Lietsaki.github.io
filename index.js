@@ -13,6 +13,7 @@ typeMessage('technologies', 'Technologies I currently work with:', 0, 200);
 const aboutPage = document.getElementById('about');
 const contactPage = document.getElementById('contact');
 const noise = document.getElementById('noise');
+const semapp = document.getElementById('semapp');
 const trainingMode = document.getElementById('trainingMode');
 const whoolsoWebApp = document.getElementById('whoolsoWebApp');
 const whoolsoAPI = document.getElementById('whoolsoAPI');
@@ -58,10 +59,10 @@ aboutButton.addEventListener('click', function () {
 });
 
 projectsButton.addEventListener('click', function () {
-  switchPage(whoolsoAPI);
+  switchPage(trainingMode);
 });
 
-let projects = [whoolsoAPI, whoolsoWebApp, trainingMode];
+let projects = [trainingMode, semapp, whoolsoAPI, whoolsoWebApp];
 let viewingProject = 0;
 
 nextButton.addEventListener('click', function () {
